@@ -1,8 +1,8 @@
 
 let number =document.querySelector('.number');
 let gueesNumber= document.querySelector("#guessNumber")
-let secretnumber = Math.trunc(Math.random()* 20) + 1 ;
-let score = 20;
+let secretnumber = Math.trunc(Math.random()* 30) + 1 ;
+let score = 30;
 let highScore=0;
 
 // display messages
@@ -51,12 +51,12 @@ document.querySelector('.again').addEventListener('click', function again(){
     document.querySelector('.container').style ="background-color: #222"
     number.style.width="130px"
     disblayMessage("🔂 Start Again!")
-    score=20;
+    score=30;
     document.querySelector('.score').textContent=score;
-    secretnumber = Math.trunc(Math.random()* 20) + 1 ;
+    secretnumber = Math.trunc(Math.random()* 30) + 1 ;
     document.querySelector('.number').textContent='?'
     document.querySelector("#guessNumber").value="";
-    if(score>20){
+    if(score>30){
         again();
     }
 })
