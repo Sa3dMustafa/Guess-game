@@ -5,6 +5,7 @@
     font-family: 'Press Start 2P', cursive;
 }
 body{
+    height: 100vh;
     background-color: #222;
     color: white;
 }
@@ -98,8 +99,12 @@ button{
     flex-direction: column;
     gap: 30px;
 }
-
+/* small screens */
 @media only screen and  (min-width:310px) and (max-width:559px) {
+    .container header{
+        margin: 0;
+    }
+
     .container header h1{
         font-size: 30px;
     }
@@ -108,9 +113,16 @@ button{
         width: 80px;
         font-size: 12px;
     }
+    .container .mid .number{
+        width: 120px;
+        height: 80px;
+        font-size: 30px;
+    }
     .container .bottom{
+        margin: 0;
         padding: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 30px;
     }
     .bottom .left input[type="number"]{
         height: 70px;
